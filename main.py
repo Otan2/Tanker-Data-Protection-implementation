@@ -10,12 +10,12 @@ async def main():
 
     
     ### CREATE PROVISORY IDENTITY
-    info_provisory_account = await user_provisory.create_provisory("test@test.fr")
+    info_provisory_account = await user_provisory.create_provisory("bob@email.fr")
 
     ### Alice CRYPTS DATA
     await alice.connect("user36","passwd")
-    ### crypt "test" and allow "test@test.fr" to decrypt it
-    data = await alice.crypt("test","test@test.fr")
+    ### crypt "test" and allow "bob@email.fr to decrypt it
+    data = await alice.crypt("test","bob@email.fr")
 
     ### bob CONNECTS AND ATTACHS PROVISORY IDENTITY    
     identity = await bob.create("bob","passwd")

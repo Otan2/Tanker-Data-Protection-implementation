@@ -1,7 +1,7 @@
 ### Installation Serveur identity:
 
 ```bash
-$pip install fask
+$pip install flask
 $pip install tankerdk-indentity
 ```
 
